@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-12T04:28:56.101838",
+    "pipeline_version": "1.0.0",
+    "llm_used": false,
+    "overall_confidence": 0.0
+  },
+  "medical_summary": {
+    "Patient_Name": {
+      "value": null,
+      "confidence": 0.0,
+      "source": "not_mentioned"
+    },
+    "Symptoms": [],
+    "Diagnosis": {
+      "value": null,
+      "confidence": 0.0,
+      "source": "not_mentioned"
+    },
+    "Treatment": [],
+    "Current_Status": {
+      "value": null,
+      "confidence": 0.0,
+      "source": "not_mentioned"
+    },
+    "Prognosis": {
+      "value": null,
+      "confidence": 0.0,
+      "source": "not_mentioned"
+    }
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": "Neutral",
+    "sentiment_score": 0.5,
+    "confidence": 0.0,
+    "intent": "Unknown",
+    "intent_confidence": 0.0,
+    "all_intents": []
+  },
+  "soap_note": {
+    "Subjective": {
+      "Chief_Complaint": "Not specified",
+      "History_of_Present_Illness": "Patient reports not specified"
+    },
+    "Objective": {
+      "Physical_Exam": "Not documented",
+      "Observations": "Patient appears in normal health, cooperative during examination"
+    },
+    "Assessment": {
+      "Diagnosis": null,
+      "Severity": "Mild to moderate",
+      "Supporting_Evidence": "Based on patient history and symptoms"
+    },
+    "Plan": {
+      "Treatment": "Continue current management",
+      "Medications": "None",
+      "Follow_Up": "Return if symptoms worsen or persist",
+      "Patient_Education": "Patient advised on symptoms to monitor and when to seek care"
+    }
+  },
+  "validation": {
+    "medical_summary": {
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        "Empty field: Symptoms",
+        "Empty field: Treatment"
+      ]
+    },
+    "soap_note": {
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        "Assessment: Missing Diagnosis"
+      ]
+    },
+    "sentiment": {
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        "Low confidence in sentiment analysis: 0.0"
+      ]
+    }
+  }
+}

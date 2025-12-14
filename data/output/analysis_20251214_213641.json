@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-14T21:36:41.705415",
+    "pipeline_version": "1.0.0",
+    "llm_used": true,
+    "overall_confidence": 0.757
+  },
+  "medical_summary": {
+    "Patient_Name": {
+      "value": "Carter",
+      "confidence": 0.95,
+      "source": "stated"
+    },
+    "Symptoms": [
+      {
+        "value": "Discomfort",
+        "confidence": 1.0,
+        "source": "extracted"
+      },
+      {
+        "value": "Pain",
+        "confidence": 1.0,
+        "source": "extracted"
+      },
+      {
+        "value": "Ache",
+        "confidence": 1.0,
+        "source": "extracted"
+      }
+    ],
+    "Diagnosis": {
+      "value": null,
+      "confidence": 0.0,
+      "source": "not_mentioned"
+    },
+    "Treatment": [
+      {
+        "value": "Wet Patch",
+        "confidence": 0.9470000267028809,
+        "source": "stated"
+      },
+      {
+        "value": "Sling",
+        "confidence": 0.9940000176429749,
+        "source": "stated"
+      },
+      {
+        "value": "Pain",
+        "confidence": 0.7799999713897705,
+        "source": "stated"
+      },
+      {
+        "value": "Physiotherapy",
+        "confidence": 0.996999979019165,
+        "source": "stated"
+      },
+      {
+        "value": "Ray",
+        "confidence": 0.5609999895095825,
+        "source": "stated"
+      },
+      {
+        "value": "Examination",
+        "confidence": 0.8019999861717224,
+        "source": "stated"
+      },
+      {
+        "value": "Strength",
+        "confidence": 0.6190000176429749,
+        "source": "stated"
+      },
+      {
+        "value": "Painkillers",
+        "confidence": 0.85,
+        "source": "stated"
+      }
+    ],
+    "Current_Status": {
+      "value": null,
+      "confidence": 0.0,
+      "source": "not_mentioned"
+    },
+    "Prognosis": {
+      "value": "Full recovery expected",
+      "confidence": 0.85,
+      "source": "stated"
+    }
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": "Reassured",
+    "sentiment_score": 0.952,
+    "confidence": 0.583,
+    "intent": "Reporting Symptoms",
+    "intent_confidence": 0.992,
+    "all_intents": [
+      {
+        "intent": "reporting symptoms",
+        "confidence": 0.992
+      },
+      {
+        "intent": "providing medical history",
+        "confidence": 0.988
+      },
+      {
+        "intent": "seeking reassurance",
+        "confidence": 0.987
+      },
+      {
+        "intent": "expressing concern",
+        "confidence": 0.983
+      },
+      {
+        "intent": "asking questions",
+        "confidence": 0.952
+      },
+      {
+        "intent": "confirming understanding",
+        "confidence": 0.937
+      }
+    ]
+  },
+  "soap_note": {
+    "Subjective": {
+      "Chief_Complaint": "Discomfort in the right shoulder and upper arm following a fall at work",
+      "History_of_Present_Illness": "The patient slipped and fell on his right shoulder at work on October 14th, experiencing immediate sharp pain and limited arm mobility. He was treated at Stepping Hill Hospital's Urgent Care with a sling, painkillers, and later underwent physiotherapy, which improved his mobility and strength. He currently experiences mild aches with heavy lifting or sleeping on his right side.",
+      "Review_of_Systems": "No anxiety, difficulty focusing, or other systemic symptoms reported."
+    },
+    "Objective": {
+      "Physical_Exam": "Full range of motion in the right shoulder, no tenderness, and normal strength and joint stability.",
+      "Vital_Signs": "Not mentioned",
+      "Observations": "Patient appears to have made significant progress in recovery with no signs of ongoing injury."
+    },
+    "Assessment": {
+      "Diagnosis": "Right shoulder injury, likely a soft tissue injury or strain given the mechanism of injury and symptoms",
+      "Severity": "Mild, given the improvement in symptoms and physical exam findings",
+      "Supporting_Evidence": "History of present illness, physical exam findings, and previous diagnostic tests (X-ray) which ruled out fractures."
+    },
+    "Plan": {
+      "Treatment": "Continue with current activities, avoiding heavy lifting if it exacerbates symptoms. No further physiotherapy is planned at this time.",
+      "Medications": "No new medications prescribed; patient may continue with over-the-counter painkillers as needed.",
+      "Follow_Up": "Patient is advised to return for a follow-up if symptoms worsen or if he experiences any new or concerning symptoms.",
+      "Patient_Education": "Patient was informed of the expected full recovery within 23 months of the injury and advised to monitor for any signs of long-term damage or instability."
+    }
+  },
+  "validation": {
+    "medical_summary": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    "soap_note": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    "sentiment": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    }
+  }
+}

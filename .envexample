@@ -1,0 +1,13 @@
+# .env
+
+# Groq API Key (Get from: https://console.groq.com)
+GROQ_API_KEY=place-your-groq-api-key-here
+
+# Model Configuration
+USE_GPU=true
+MAX_LENGTH=512
+BATCH_SIZE=8
+
+# Output Settings
+OUTPUT_DIR=data/output
+CONFIDENCE_THRESHOLD=0.6

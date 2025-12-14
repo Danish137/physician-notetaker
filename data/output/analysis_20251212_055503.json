@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-12T05:55:03.687754",
+    "pipeline_version": "1.0.0",
+    "llm_used": true,
+    "overall_confidence": 0.92
+  },
+  "medical_summary": {
+    "Patient_Name": {
+      "value": "Ms. Jones",
+      "confidence": 1.0,
+      "source": "stated"
+    },
+    "Symptoms": [
+      {
+        "value": "Neck pain",
+        "confidence": 1.0,
+        "source": "stated"
+      },
+      {
+        "value": "Back pain",
+        "confidence": 1.0,
+        "source": "stated"
+      },
+      {
+        "value": "Discomfort",
+        "confidence": 0.8,
+        "source": "stated"
+      }
+    ],
+    "Diagnosis": {
+      "value": "Whiplash injury",
+      "confidence": 0.9,
+      "source": "stated",
+      "reasoning": "The patient was in a car accident and experienced neck and back pain, which is consistent with a whiplash injury."
+    },
+    "Treatment": [
+      {
+        "value": "Painkillers",
+        "confidence": 0.8,
+        "source": "stated"
+      },
+      {
+        "value": "10 physiotherapy sessions",
+        "confidence": 1.0,
+        "source": "stated"
+      },
+      {
+        "value": "Physical examination",
+        "confidence": 0.9,
+        "source": "stated"
+      }
+    ],
+    "Current_Status": {
+      "value": "Improved, with occasional backaches",
+      "confidence": 0.9,
+      "source": "stated"
+    },
+    "Prognosis": {
+      "value": "Full recovery expected within 6 months",
+      "confidence": 0.9,
+      "source": "stated"
+    }
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": "Anxious",
+    "sentiment_score": 0.976,
+    "confidence": 0.667,
+    "intent": "Seeking Reassurance",
+    "intent_confidence": 0.994,
+    "all_intents": [
+      {
+        "intent": "seeking reassurance",
+        "confidence": 0.994
+      },
+      {
+        "intent": "reporting symptoms",
+        "confidence": 0.994
+      },
+      {
+        "intent": "providing medical history",
+        "confidence": 0.99
+      },
+      {
+        "intent": "expressing concern",
+        "confidence": 0.986
+      },
+      {
+        "intent": "asking questions",
+        "confidence": 0.97
+      },
+      {
+        "intent": "confirming understanding",
+        "confidence": 0.965
+      }
+    ]
+  },
+  "soap_note": {
+    "Subjective": {
+      "Chief_Complaint": "Discomfort and pain following a car accident",
+      "History_of_Present_Illness": "The patient was involved in a car accident on September 1st, resulting in a whiplash injury. Initially, the patient experienced significant neck and back pain, which improved after four weeks and ten sessions of physiotherapy. The patient still reports occasional backaches.",
+      "Review_of_Systems": "No anxiety, emotional issues, or difficulty concentrating were reported. The patient's daily life and work have not been significantly impacted."
+    },
+    "Objective": {
+      "Physical_Exam": "Full range of movement in the neck and back, no tenderness or signs of lasting damage, with muscles and spine in good condition.",
+      "Vital_Signs": "Not mentioned",
+      "Observations": "The patient appears to be recovering well from the injury."
+    },
+    "Assessment": {
+      "Diagnosis": "Whiplash injury",
+      "Severity": "Mild to moderate",
+      "Supporting_Evidence": "History of car accident, initial symptoms of neck and back pain, and improvement with physiotherapy."
+    },
+    "Plan": {
+      "Treatment": "Continued monitoring and follow-up as needed",
+      "Medications": "None prescribed at this time",
+      "Follow_Up": "The patient is advised to return if symptoms worsen or if there are any concerns.",
+      "Patient_Education": "The patient was informed of the expected full recovery within six months and advised to report any changes in symptoms."
+    }
+  },
+  "validation": {
+    "medical_summary": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    "soap_note": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    "sentiment": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    }
+  }
+}

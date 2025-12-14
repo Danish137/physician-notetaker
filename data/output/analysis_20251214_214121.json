@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-14T21:41:21.325688",
+    "pipeline_version": "1.0.0",
+    "llm_used": true,
+    "overall_confidence": 0.982
+  },
+  "medical_summary": {
+    "Patient_Name": {
+      "value": "Mr. Carter",
+      "confidence": 1.0,
+      "source": "stated"
+    },
+    "Symptoms": [
+      {
+        "value": "Right shoulder pain",
+        "confidence": 1.0,
+        "source": "stated"
+      },
+      {
+        "value": "Mild aches",
+        "confidence": 1.0,
+        "source": "stated"
+      },
+      {
+        "value": "Discomfort",
+        "confidence": 1.0,
+        "source": "stated"
+      }
+    ],
+    "Diagnosis": {
+      "value": "Right shoulder injury",
+      "confidence": 0.8,
+      "source": "inferred",
+      "reasoning": "The patient had a fall, experienced pain and limited movement in the right shoulder, and received treatment for it."
+    },
+    "Treatment": [
+      {
+        "value": "Sling",
+        "confidence": 1.0,
+        "source": "stated"
+      },
+      {
+        "value": "Painkillers",
+        "confidence": 1.0,
+        "source": "stated"
+      },
+      {
+        "value": "8 physiotherapy sessions",
+        "confidence": 1.0,
+        "source": "stated"
+      },
+      {
+        "value": "X-ray",
+        "confidence": 1.0,
+        "source": "stated"
+      }
+    ],
+    "Current_Status": {
+      "value": "Recovering with mild symptoms",
+      "confidence": 1.0,
+      "source": "stated"
+    },
+    "Prognosis": {
+      "value": "Full recovery expected within 23 months",
+      "confidence": 1.0,
+      "source": "stated"
+    }
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": "Reassured",
+    "sentiment_score": 0.952,
+    "confidence": 0.583,
+    "intent": "Reporting Symptoms",
+    "intent_confidence": 0.992,
+    "all_intents": [
+      {
+        "intent": "reporting symptoms",
+        "confidence": 0.992
+      },
+      {
+        "intent": "providing medical history",
+        "confidence": 0.988
+      },
+      {
+        "intent": "seeking reassurance",
+        "confidence": 0.987
+      },
+      {
+        "intent": "expressing concern",
+        "confidence": 0.983
+      },
+      {
+        "intent": "asking questions",
+        "confidence": 0.952
+      },
+      {
+        "intent": "confirming understanding",
+        "confidence": 0.937
+      }
+    ]
+  },
+  "soap_note": {
+    "Subjective": {
+      "Chief_Complaint": "Right shoulder discomfort and mild aches",
+      "History_of_Present_Illness": "The patient reports a fall at work on October 14th, landing on his right shoulder, with initial sharp pain and limited arm movement. He was treated with a sling, painkillers, and physiotherapy, and has been recovering since. He currently experiences mild aches with heavy lifting or sleeping on his right side.",
+      "Review_of_Systems": "No anxiety, difficulty focusing, or other systemic symptoms reported."
+    },
+    "Objective": {
+      "Physical_Exam": "Full range of motion in the right shoulder, no tenderness, and normal strength and joint stability.",
+      "Vital_Signs": "Not mentioned",
+      "Observations": "Patient appears to be recovering well from the injury."
+    },
+    "Assessment": {
+      "Diagnosis": "Right shoulder injury, likely a soft tissue injury or strain",
+      "Severity": "Mild, with significant improvement since the initial injury",
+      "Supporting_Evidence": "Patient's history, physical examination findings, and previous X-ray results ruling out fractures."
+    },
+    "Plan": {
+      "Treatment": "Continue with current recovery plan, avoiding heavy lifting and modifying activities as needed",
+      "Medications": "None prescribed at this time",
+      "Follow_Up": "Patient to return for follow-up if symptoms worsen or if he experiences increased pain",
+      "Patient_Education": "Informed about expected full recovery within 23 months, with no anticipated long-term impact on work or daily life."
+    }
+  },
+  "validation": {
+    "medical_summary": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    "soap_note": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    "sentiment": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    }
+  }
+}

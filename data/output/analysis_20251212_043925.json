@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-12T04:39:25.763619",
+    "pipeline_version": "1.0.0",
+    "llm_used": false,
+    "overall_confidence": 0.9
+  },
+  "medical_summary": {
+    "Patient_Name": {
+      "value": "Jones",
+      "confidence": 0.95,
+      "source": "stated"
+    },
+    "Symptoms": [
+      {
+        "value": "Back Pain",
+        "confidence": 0.85,
+        "source": "combined"
+      },
+      {
+        "value": "Discomfort",
+        "confidence": 1.0,
+        "source": "extracted"
+      },
+      {
+        "value": "Pain",
+        "confidence": 1.0,
+        "source": "extracted"
+      },
+      {
+        "value": "Head impact",
+        "confidence": 0.8,
+        "source": "extracted"
+      }
+    ],
+    "Diagnosis": {
+      "value": "Whiplash injury",
+      "confidence": 0.9,
+      "source": "stated"
+    },
+    "Treatment": [
+      {
+        "value": "10 Painkillers sessions",
+        "confidence": 0.9,
+        "source": "stated"
+      },
+      {
+        "value": "10 Physiotherapy sessions",
+        "confidence": 0.9,
+        "source": "stated"
+      },
+      {
+        "value": "10 Examination sessions",
+        "confidence": 0.9,
+        "source": "stated"
+      },
+      {
+        "value": "Painkillers",
+        "confidence": 0.85,
+        "source": "stated"
+      }
+    ],
+    "Current_Status": {
+      "value": "Occasional backache",
+      "confidence": 0.85,
+      "source": "stated"
+    },
+    "Prognosis": {
+      "value": "Full recovery expected within six months",
+      "confidence": 0.9,
+      "source": "stated"
+    }
+  },
+  "sentiment_analysis": {
+    "overall_sentiment": "Anxious",
+    "sentiment_score": 0.976,
+    "confidence": 0.667,
+    "intent": "Seeking Reassurance",
+    "intent_confidence": 0.994,
+    "all_intents": [
+      {
+        "intent": "seeking reassurance",
+        "confidence": 0.994
+      },
+      {
+        "intent": "reporting symptoms",
+        "confidence": 0.994
+      },
+      {
+        "intent": "providing medical history",
+        "confidence": 0.99
+      },
+      {
+        "intent": "expressing concern",
+        "confidence": 0.986
+      },
+      {
+        "intent": "asking questions",
+        "confidence": 0.97
+      },
+      {
+        "intent": "confirming understanding",
+        "confidence": 0.965
+      }
+    ]
+  },
+  "soap_note": {
+    "Subjective": {
+      "Chief_Complaint": "Back Pain, Discomfort, Pain, Head impact",
+      "History_of_Present_Illness": "How are you feeling today Good morning, doctor What did you feel immediately after the accident At first, I was just shocked But then I realized I had hit my head on the steering wheel, and I could feel pain in my neck and back almost right away They checked me over and said it was a whiplash injury, but they didn't do any X-rays My neck and back pain were really badI had trouble sleeping and had to take painkillers regularly Are you still experiencing pain now It's not constant, but I do get oc"
+    },
+    "Objective": {
+      "Physical_Exam": "Your neck and back have a full range of movement, and there's no tenderness or signs of lasting damage",
+      "Observations": "Patient appears in normal health, cooperative during examination"
+    },
+    "Assessment": {
+      "Diagnosis": "Whiplash injury",
+      "Severity": "Mild to moderate",
+      "Supporting_Evidence": "Based on back pain, discomfort, pain, head impact following reported incident"
+    },
+    "Plan": {
+      "Treatment": "10 Painkillers sessions, 10 Physiotherapy sessions, 10 Examination sessions, Painkillers",
+      "Medications": "As previously prescribed",
+      "Follow_Up": "Follow-up as needed. Full recovery expected within six months",
+      "Patient_Education": "Patient advised on symptoms to monitor and when to seek care"
+    }
+  },
+  "validation": {
+    "medical_summary": {
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        "Whiplash diagnosis but no neck symptoms mentioned"
+      ]
+    },
+    "soap_note": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    "sentiment": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,51 @@
+Doctor: Good morning, Mr. Carter. How are you feeling today?
+
+Patient: Good morning, doctor. I'm feeling better than before, but I still get some discomfort every now and then.
+
+Doctor: I understand you slipped and fell at work last October. Can you walk me through what happened?
+
+Patient: Yes, it was on October 14th, around 9:00 in the morning. I was working in the warehouse in Stockport, and the floor had a wet patch I didn’t notice. My foot slipped, and I fell sideways onto my right shoulder.
+
+Doctor: That sounds like a painful fall. Were you able to break the fall with your hands?
+
+Patient: Not really. It happened too fast.
+
+Doctor: What did you feel immediately after the incident?
+
+Patient: At first, I was just startled. Then I felt a sharp pain in my right shoulder and upper arm. I couldn’t lift my arm properly right after the fall.
+
+Doctor: Did you seek medical attention at that time?
+
+Patient: Yes, I went to Stepping Hill Hospital’s Urgent Care. They examined me. They did an X-ray to rule out fractures, which came back clear. They gave me a sling and some painkillers.
+
+Doctor: How did things progress after that?
+
+Patient: The first few weeks were difficult. I had limited movement, and the pain made simple tasks hard. I started physiotherapy about two weeks after the injury and had eight sessions, which really helped with mobility and strength.
+
+Doctor: That makes sense. Are you still experiencing pain now?
+
+Patient: It’s not constant, but I do get mild aches if I lift something heavy or sleep on my right side. Definitely not as bad as before.
+
+Doctor: That’s good to hear. Have you noticed any other effects, like anxiety about returning to work or difficulty focusing?
+
+Patient: No, nothing like that. I feel normal otherwise, and I’m not nervous about being in the warehouse again.
+
+Doctor: And how has this impacted your daily life? Work, hobbies, anything like that?
+
+Patient: I took about ten days off work, but after that, I was able to go back gradually. I avoided lifting for a bit, but overall it hasn’t stopped me from doing my usual activities.
+
+Doctor: That’s encouraging. Let’s go ahead and do a physical examination to check your mobility and any lingering pain.
+
+Doctor: Everything looks good. Your shoulder has a full range of movement, and there’s no tenderness or signs of ongoing injury. Your strength and joint stability appear normal.
+
+Patient: That’s a relief!
+
+Doctor: Yes, your recovery so far has been very positive. Given your progress, I’d expect you to make a full recovery within twenty-three months of the injury. There are no signs of long-term damage or instability.
+
+Patient: That’s great to hear. So, I don’t need to worry about this affecting me in the future?
+
+Doctor: That’s right. I don’t anticipate any long-term impact on your work or daily life. If anything changes or you start experiencing increased pain, you can always come back for a follow-up. But at this point, you’re on track for a complete recovery.
+
+Patient: Thank you, doctor. I appreciate it.
+
+Doctor: You’re very welcome, Mr. Carter. Take care, and don’t hesitate to reach out if you need anything.

@@ -1,0 +1,87 @@
+# config/config.yaml
+
+# Model Configuration
+models:
+  # Medical NER - Lightweight and efficient
+  medical_ner:
+    name: "d4data/biomedical-ner-all"
+    device: "cuda"
+    max_length: 512
+    batch_size: 8
+    aggregation_strategy: "simple"
+  
+  # Sentiment Analysis - Very lightweight
+  sentiment:
+    name: "distilbert-base-uncased-finetuned-sst-2-english"
+    device: "cuda"
+    max_length: 128
+  
+  # Intent Classification - Zero-shot (no fine-tuning needed)
+  intent:
+    name: "facebook/bart-large-mnli"
+    device: "cuda"
+    max_length: 256
+  
+  # LLM for structured extraction (optional - uses API)
+  llm:
+    provider: "groq"
+    model: "llama-3.3-70b-versatile"
+    temperature: 0.1
+    max_tokens: 2000
+    use_for_extraction: true
+    use_for_soap: true
+
+# Processing Configuration
+processing:
+  speaker_labels:
+    doctor: ["Doctor", "Physician", "Dr.", "MD"]
+    patient: ["Patient", "Pt."]
+  
+  confidence_thresholds:
+    high: 0.8
+    medium: 0.5
+    low: 0.3
+  
+  # Medical entity patterns
+  medical_keywords:
+    symptoms: ["pain", "hurt", "ache", "discomfort", "injury", "sore", "tender"]
+    treatments: ["therapy", "medication", "treatment", "session", "prescription", "pills"]
+    body_parts: ["neck", "back", "head", "spine", "shoulder", "knee", "arm", "leg"]
+    temporal: ["weeks?", "months?", "days?", "years?", "sessions?"]
+
+# Output Configuration
+output:
+  format: "json"
+  include_metadata: true
+  include_confidence: true
+  include_reasoning: true
+  pretty_print: true
+
+# SOAP Configuration
+soap:
+  sections:
+    - Subjective
+    - Objective
+    - Assessment
+    - Plan
+  
+  keywords:
+    subjective: ["feel", "hurt", "pain", "complain", "report", "told", "said", "experienced"]
+    objective: ["examination", "observed", "range of motion", "tenderness", "exam shows", "physical exam"]
+    assessment: ["diagnosis", "injury", "condition", "assessment", "impression"]
+    plan: ["treatment", "follow-up", "continue", "recommend", "prescribe", "plan"]
+
+# Intent labels for zero-shot classification
+intent_labels:
+  - "reporting symptoms"
+  - "seeking reassurance"
+  - "asking questions"
+  - "expressing concern"
+  - "providing medical history"
+  - "confirming understanding"
+
+# Sentiment mapping
+sentiment_mapping:
+  POSITIVE: "Reassured"
+  NEGATIVE: "Anxious"
+  NEUTRAL: "Neutral"
