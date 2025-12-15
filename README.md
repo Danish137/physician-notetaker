@@ -2,6 +2,23 @@
 
 An AI-powered system for medical transcription analysis, extracting structured medical information, performing sentiment analysis, and generating SOAP notes from physician-patient conversations.
 
+## 🔍 How to Review (Recommended)
+
+**No setup is required to review this assignment.**
+
+1. Open the demonstration notebook:
+   notebooks/01_data_exploration.ipynb
+
+2. Scroll to **“View Results”**
+   - The notebook loads **pre-generated outputs** from `data/output/`
+   - These represent the complete and intended results of the pipeline
+
+3. Live execution cells are included for completeness.
+   - LLM-assisted execution requires an API key
+   - Local-only execution is supported but produces less refined summaries
+
+This approach ensures the solution is fully reviewable without installing dependencies or configuring API keys.
+
 ## 🎯 Features
 
 ### 1. Medical NLP Summarization
@@ -28,6 +45,11 @@ An AI-powered system for medical transcription analysis, extracting structured m
 - **Storage**: 5GB for models and dependencies
 
 ## 🚀 Quick Start
+
+##  Running Locally (Optional)
+
+Only required if you want to execute the pipeline yourself.
+
 
 ### 1. Clone the Repository
 ```bash
